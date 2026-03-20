@@ -1,0 +1,905 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ScriptStore — Bộ Giải Pháp Tự Động Hóa Google Workspace</title>
+  <meta name="description" content="Khám phá bộ sưu tập Google Apps Script cao cấp. Tự động hóa công việc, tiết kiệm hàng giờ mỗi tuần. Copy-paste và chạy ngay trong 5 phút." />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<!-- ══════════════════════════════════════════════
+     NAVBAR
+═══════════════════════════════════════════════ -->
+<nav class="navbar" id="navbar">
+  <a href="#" class="nav-logo" aria-label="ScriptStore Home">
+    <div class="nav-logo-mark">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+        <polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/>
+      </svg>
+    </div>
+    <span class="nav-logo-name">Script<em>Store</em></span>
+  </a>
+
+  <ul class="nav-links" id="navLinks">
+    <li><a href="#products">Sản Phẩm</a></li>
+    <li><a href="#how">Cách Hoạt Động</a></li>
+    <li><a href="#testimonials">Đánh Giá</a></li>
+    <li><a href="#features">Tính Năng</a></li>
+  </ul>
+
+  <div class="nav-right">
+    <a href="#products" class="btn btn-cta" id="navCta">Khám Phá →</a>
+    <button class="hamburger" id="hamburger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<!-- ══════════════════════════════════════════════
+     HERO
+═══════════════════════════════════════════════ -->
+<section class="hero" id="hero">
+  <div class="container">
+    <div class="hero-inner">
+
+      <!-- Left: text -->
+      <div class="hero-content">
+        <div class="hero-badge">
+          <span class="badge-dot"></span>
+          🚀 Hơn <span id="heroCounter">1,204</span> khách hàng đang dùng
+        </div>
+
+        <h1 class="hero-h1">
+          Tự Động Hóa<br/>
+          <span class="gradient-text">Google Workspace</span><br/>
+          Chỉ Trong 5 Phút
+        </h1>
+
+        <p class="hero-p">
+          Bộ sưu tập Google Apps Script cao cấp — copy, paste, chạy ngay không cần biết lập trình. Tiết kiệm hàng giờ thủ công mỗi tuần.
+        </p>
+
+        <div class="hero-btns">
+          <a href="#products" class="btn btn-cta btn-lg" id="heroMainCta">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 01-8 0"/></svg>
+            Xem Tất Cả Sản Phẩm
+          </a>
+          <a href="#how" class="btn btn-outline btn-lg" id="heroSecCta">
+            Cách hoạt động
+          </a>
+        </div>
+
+        <div class="hero-trust">
+          <div class="trust-item">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+            Copy-paste & chạy ngay
+          </div>
+          <div class="trust-item">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+            Cập nhật trọn đời
+          </div>
+          <div class="trust-item">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+            Hỗ trợ 1:1 tận tình
+          </div>
+        </div>
+      </div>
+
+      <!-- Right: visual -->
+      <div class="hero-visual">
+        <div class="hero-img-frame">
+          <img src="assets/hero.png" alt="ScriptStore dashboard preview" loading="eager" />
+        </div>
+        <div class="stat-pill stat-pill-1">
+          <div class="pill-label">Tiết kiệm mỗi tuần</div>
+          <div class="pill-val orange">8+ giờ</div>
+          <div class="pill-sub">trung bình mỗi khách</div>
+        </div>
+        <div class="stat-pill stat-pill-2">
+          <div class="pill-label">Đánh giá</div>
+          <div class="pill-val">★ 4.9/5</div>
+          <div class="pill-sub">từ 300+ đánh giá</div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════════
+     STATS BAR
+═══════════════════════════════════════════════ -->
+<div class="stats-bar">
+  <div class="container">
+    <div class="stats-bar-inner">
+      <div class="sbar-item">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87"/><path d="M16 3.13a4 4 0 010 7.75"/></svg>
+        <strong style="color:var(--text)">1,200+</strong> khách hàng tin dùng
+      </div>
+      <div class="sbar-divider"></div>
+      <div class="sbar-item">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+        <strong style="color:var(--text)">30+</strong> script chuyên nghiệp
+      </div>
+      <div class="sbar-divider"></div>
+      <div class="sbar-item">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+        <strong style="color:var(--text)">4.9/5</strong> đánh giá trung bình
+      </div>
+      <div class="sbar-divider"></div>
+      <div class="sbar-item">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+        <strong style="color:var(--text)">&lt; 5 phút</strong> để cài đặt & chạy
+      </div>
+      <div class="sbar-divider"></div>
+      <div class="sbar-item">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+        <strong style="color:var(--text)">Bảo hành</strong> hoàn tiền 30 ngày
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ══════════════════════════════════════════════
+     PRODUCTS SECTION
+═══════════════════════════════════════════════ -->
+<section class="products" id="products">
+  <div class="container">
+    <div class="section-header">
+      <p class="section-label">Kho Sản Phẩm</p>
+      <h2 class="section-title reveal">Khám Phá <span class="gradient-text">Bộ Giải Pháp</span> Của Chúng Tôi</h2>
+      <p class="section-sub reveal d1">Mỗi script được xây dựng tỉ mỉ, tối ưu hiệu năng và kèm theo tài liệu hướng dẫn chi tiết.</p>
+    </div>
+
+    <!-- Toolbar: filter + search -->
+    <div class="products-toolbar reveal d2">
+      <div class="filter-tabs" role="tablist">
+        <button class="filter-tab active" data-filter="all" role="tab">Tất Cả</button>
+        <button class="filter-tab" data-filter="sheets" role="tab">Sheets</button>
+        <button class="filter-tab" data-filter="gmail" role="tab">Gmail</button>
+        <button class="filter-tab" data-filter="drive" role="tab">Drive</button>
+        <button class="filter-tab" data-filter="calendar" role="tab">Calendar</button>
+        <button class="filter-tab" data-filter="docs" role="tab">Docs</button>
+        <button class="filter-tab" data-filter="webapp" role="tab">Web App</button>
+      </div>
+
+      <div class="search-box" role="search">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+        <input type="text" id="productSearch" placeholder="Tìm script..." aria-label="Tìm kiếm sản phẩm" />
+      </div>
+    </div>
+
+    <!-- Products Grid -->
+    <div class="products-grid" id="productsGrid">
+
+      <!-- Card 1: Báo Cáo Doanh Thu Pro -->
+      <article class="product-card reveal" data-category="sheets" data-id="p1" tabindex="0" role="button" aria-label="Xem chi tiết Báo Cáo Doanh Thu Pro">
+        <div class="card-preview preview-sheets">
+          <div class="card-preview-icon" style="background:rgba(16,185,129,0.15)">
+            <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="#10B981" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M3 15h18M9 3v18"/>
+            </svg>
+          </div>
+          <span class="card-badge card-badge-hot">HOT</span>
+        </div>
+        <div class="card-body">
+          <div class="card-tags">
+            <span class="tag tag-sheets">Sheets</span>
+            <span class="tag tag-popular">Bán Chạy</span>
+          </div>
+          <h3 class="card-name">Báo Cáo Doanh Thu Pro</h3>
+          <p class="card-desc">Tự động tổng hợp doanh thu từ nhiều sheet, tạo PDF có biểu đồ và gửi email cho quản lý lúc 8h tối mỗi ngày.</p>
+          <ul class="card-features">
+            <li>
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+              Gom dữ liệu từ 10+ Google Sheets
+            </li>
+            <li>
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+              Xuất PDF có biểu đồ & logo
+            </li>
+            <li>
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+              Gửi email tự động theo lịch
+            </li>
+          </ul>
+        </div>
+        <div class="card-footer">
+          <div>
+            <span class="card-price">299.000đ</span>
+            <span class="card-price-old">499.000đ</span>
+          </div>
+          <span class="btn-card">
+            Chi tiết
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"/></svg>
+          </span>
+        </div>
+      </article>
+
+      <!-- Card 2: Mail Merge Nâng Cao -->
+      <article class="product-card reveal d1" data-category="gmail" data-id="p2" tabindex="0" role="button" aria-label="Xem chi tiết Mail Merge Nâng Cao">
+        <div class="card-preview preview-gmail">
+          <div class="card-preview-icon" style="background:rgba(239,68,68,0.15)">
+            <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="#F87171" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/>
+            </svg>
+          </div>
+          <span class="card-badge" style="background:var(--primary)">MỚI</span>
+        </div>
+        <div class="card-body">
+          <div class="card-tags">
+            <span class="tag tag-gmail">Gmail</span>
+            <span class="tag tag-new">Mới</span>
+          </div>
+          <h3 class="card-name">Mail Merge Nâng Cao</h3>
+          <p class="card-desc">Gửi email hàng loạt siêu cá nhân hóa — đính kèm file riêng biệt cho từng người từ link trong Sheets.</p>
+          <ul class="card-features">
+            <li>
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+              File đính kèm động cho từng người
+            </li>
+            <li>
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+              Không giới hạn người nhận
+            </li>
+            <li>
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+              Dừng/tiếp tục chiến dịch linh hoạt
+            </li>
+          </ul>
+        </div>
+        <div class="card-footer">
+          <div>
+            <span class="card-price">350.000đ</span>
+          </div>
+          <span class="btn-card">
+            Chi tiết
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"/></svg>
+          </span>
+        </div>
+      </article>
+
+      <!-- Card 3: Drive Auto-Organizer -->
+      <article class="product-card reveal d2" data-category="drive" data-id="p3" tabindex="0" role="button" aria-label="Xem chi tiết Drive Auto-Organizer">
+        <div class="card-preview preview-drive">
+          <div class="card-preview-icon" style="background:rgba(59,130,246,0.15)">
+            <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="#60A5FA" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M22 19a2 2 0 01-2 2H4a2 2 0 01-2-2V5a2 2 0 012-2h5l2 3h9a2 2 0 012 2z"/>
+            </svg>
+          </div>
+        </div>
+        <div class="card-body">
+          <div class="card-tags">
+            <span class="tag tag-drive">Drive</span>
+          </div>
+          <h3 class="card-name">Drive Auto-Organizer</h3>
+          <p class="card-desc">Tự động phân loại file trong Drive theo loại, tháng/năm và phân quyền cho team mỗi đêm khi bạn ngủ.</p>
+          <ul class="card-features">
+            <li>
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+              Auto-routing theo loại file
+            </li>
+            <li>
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+              Đổi tên file hàng loạt bằng regex
+            </li>
+            <li>
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+              Phân quyền tự động cho thành viên
+            </li>
+          </ul>
+        </div>
+        <div class="card-footer">
+          <div>
+            <span class="card-price">199.000đ</span>
+          </div>
+          <span class="btn-card">
+            Chi tiết
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"/></svg>
+          </span>
+        </div>
+      </article>
+
+      <!-- Card 4: Calendar Sync Pro -->
+      <article class="product-card reveal d3" data-category="calendar" data-id="p4" tabindex="0" role="button" aria-label="Xem chi tiết Calendar Sync Pro">
+        <div class="card-preview preview-calendar">
+          <div class="card-preview-icon" style="background:rgba(139,92,246,0.15)">
+            <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="#A78BFA" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/>
+            </svg>
+          </div>
+        </div>
+        <div class="card-body">
+          <div class="card-tags">
+            <span class="tag tag-calendar">Calendar</span>
+          </div>
+          <h3 class="card-name">Calendar Sync Pro</h3>
+          <p class="card-desc">Đồng bộ sự kiện từ Google Sheets vào Calendar, gửi nhắc nhở tự động qua Gmail và Sheets theo thời gian thực.</p>
+          <ul class="card-features">
+            <li>
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+              Sync hai chiều Sheets ↔ Calendar
+            </li>
+            <li>
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+              Email nhắc nhở thông minh theo cấu hình
+            </li>
+            <li>
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+              Quản lý nhiều calendar song song
+            </li>
+          </ul>
+        </div>
+        <div class="card-footer">
+          <div>
+            <span class="card-price">249.000đ</span>
+          </div>
+          <span class="btn-card">
+            Chi tiết
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"/></svg>
+          </span>
+        </div>
+      </article>
+
+      <!-- Card 5: Doc Generator -->
+      <article class="product-card reveal d4" data-category="docs" data-id="p5" tabindex="0" role="button" aria-label="Xem chi tiết Doc Generator từ Sheets">
+        <div class="card-preview preview-docs">
+          <div class="card-preview-icon" style="background:rgba(96,165,250,0.15)">
+            <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="#93C5FD" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/>
+            </svg>
+          </div>
+        </div>
+        <div class="card-body">
+          <div class="card-tags">
+            <span class="tag tag-docs">Docs</span>
+          </div>
+          <h3 class="card-name">Doc Generator từ Sheets</h3>
+          <p class="card-desc">Tạo hàng trăm Google Docs/hợp đồng có điền sẵn dữ liệu bằng cách dùng template và data từ Sheets.</p>
+          <ul class="card-features">
+            <li>
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+              Render hàng trăm tài liệu cùng lúc
+            </li>
+            <li>
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+              Hỗ trợ placeholder phức tạp {{field}}
+            </li>
+            <li>
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+              Tự động lưu vào Drive theo cấu trúc
+            </li>
+          </ul>
+        </div>
+        <div class="card-footer">
+          <div>
+            <span class="card-price">280.000đ</span>
+          </div>
+          <span class="btn-card">
+            Chi tiết
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"/></svg>
+          </span>
+        </div>
+      </article>
+
+      <!-- Card 6: Inventory Tracker (Free) -->
+      <article class="product-card reveal d5" data-category="sheets" data-id="p6" tabindex="0" role="button" aria-label="Xem chi tiết Inventory Tracker">
+        <div class="card-preview preview-sheets2">
+          <div class="card-preview-icon" style="background:rgba(16,185,129,0.15)">
+            <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="#34D399" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M20.59 13.41l-7.17 7.17a2 2 0 01-2.83 0L2 12V2h10l8.59 8.59a2 2 0 010 2.82z"/><line x1="7" y1="7" x2="7.01" y2="7"/>
+            </svg>
+          </div>
+          <span class="card-badge card-badge-free">MIỄN PHÍ</span>
+        </div>
+        <div class="card-body">
+          <div class="card-tags">
+            <span class="tag tag-sheets">Sheets</span>
+          </div>
+          <h3 class="card-name">Inventory Tracker</h3>
+          <p class="card-desc">Script quản lý kho hàng miễn phí — tự động cập nhật tồn kho và cảnh báo khi sắp hết hàng.</p>
+          <ul class="card-features">
+            <li>
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+              Cảnh báo tồn kho thấp tự động
+            </li>
+            <li>
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+              Ghi log xuất/nhập kho real-time
+            </li>
+            <li>
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+              Dashboard tổng quan tự động
+            </li>
+          </ul>
+        </div>
+        <div class="card-footer">
+          <div>
+            <span class="card-free">Miễn phí</span>
+          </div>
+          <span class="btn-card">
+            Tải về
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+          </span>
+        </div>
+      </article>
+
+      <!-- Card 7: Quản Lý Nhân Sự Web App -->
+      <article class="product-card reveal" data-category="webapp" data-id="p7" tabindex="0" role="button" aria-label="Xem chi tiết Quản Lý Nhân Sự Web App">
+        <div class="card-preview preview-webapp">
+          <div class="card-preview-icon" style="background:rgba(217,70,239,0.15)">
+            <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="#D946EF" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/>
+            </svg>
+          </div>
+          <span class="card-badge" style="background:var(--primary)">MỚI</span>
+        </div>
+        <div class="card-body">
+          <div class="card-tags">
+            <span class="tag tag-webapp">Web App</span>
+          </div>
+          <h3 class="card-name">Quản Lý Nhân Sự Web App</h3>
+          <p class="card-desc">Giao diện web trực quan để quản lý nhân sự, chấm công, nghỉ phép. Backend sử dụng 100% Google Sheets, an toàn và dễ tùy biến.</p>
+          <ul class="card-features">
+            <li>
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+              Giao diện mobile-friendly
+            </li>
+            <li>
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+              Tính toán lương tự động
+            </li>
+            <li>
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+              Database bằng Sheets dễ quản lý
+            </li>
+          </ul>
+        </div>
+        <div class="card-footer">
+          <div>
+            <span class="card-price">499.000đ</span>
+          </div>
+          <span class="btn-card">
+            Chi tiết
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"/></svg>
+          </span>
+        </div>
+      </article>
+
+      <!-- Card 8: Cổng Tra Cứu Điểm Form -->
+      <article class="product-card reveal" data-category="webapp" data-id="p8" tabindex="0" role="button" aria-label="Xem chi tiết Portal Tra Cứu Web App">
+        <div class="card-preview preview-webapp">
+          <div class="card-preview-icon" style="background:rgba(217,70,239,0.15)">
+            <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="#D946EF" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/>
+            </svg>
+          </div>
+        </div>
+        <div class="card-body">
+          <div class="card-tags">
+            <span class="tag tag-webapp">Web App</span>
+          </div>
+          <h3 class="card-name">Portal Tra Cứu Thông Tin</h3>
+          <p class="card-desc">Tạo cổng thông tin (điểm thi, bảo hành, tra cứu hợp đồng) cho khách hàng tự động lấy dữ liệu từ Sheets bảo mật.</p>
+          <ul class="card-features">
+            <li>
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+              Tra cứu nhanh chóng, có mã xác thực
+            </li>
+            <li>
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+              Nhúng được vào Website/WordPress
+            </li>
+            <li>
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+              Giấu hoàn toàn link Google Sheets gốc
+            </li>
+          </ul>
+        </div>
+        <div class="card-footer">
+          <div>
+            <span class="card-price">350.000đ</span>
+          </div>
+          <span class="btn-card">
+            Chi tiết
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"/></svg>
+          </span>
+        </div>
+      </article>
+
+    </div><!-- /products-grid -->
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════════
+     LIVE DEMO SHOWCASE
+═══════════════════════════════════════════════ -->
+<section class="demo-showcase section-py" id="demo">
+  <div class="container">
+    <div class="demo-inner">
+      <div class="demo-text reveal">
+        <p class="section-label">Web App Framework</p>
+        <h2 class="section-title">Giao Diện <span class="gradient-text" style="background:var(--grad-webapp);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;">Chuyên Nghiệp</span> Như SaaS Thực Thụ</h2>
+        <p class="section-sub" style="margin-left:0;text-align:left">Không chỉ là các dạng bảng tính khô khan. Với Google Apps Script, bạn hoàn toàn có thể xây dựng một ứng dụng web (Web App) với giao diện UI/UX hiện đại, responsive trên mọi thiết bị và sử dụng chính Google Sheets làm Database phía sau.</p>
+        
+        <ul class="demo-features">
+          <li>
+            <div class="df-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"/><line x1="3" y1="9" x2="21" y2="9"/><line x1="9" y1="21" x2="9" y2="9"/></svg>
+            </div>
+            <div>
+              <strong>Database là Google Sheets</strong>
+              <p>Dữ liệu được lưu trực tiếp vào Sheets, trực quan, dễ chia sẻ, phân quyền chuyên sâu tuyệt đối từ G-suite.</p>
+            </div>
+          </li>
+          <li>
+            <div class="df-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 2l-2 2L17.5 3 16 4.5l-1.5-1.5L13 4.5 11.5 3 10 4.5 8.5 3 7 4.5 5.5 3 4 4.5 2 2v20h19V2z"/><polyline points="8 17 12 11 16 15"/><polyline points="8 17 8 17"/><polyline points="16 15 16 15"/></svg>
+            </div>
+            <div>
+              <strong>Host Server của Google</strong>
+              <p>Chạy siêu ổn định 24/7 với hạ tầng khổng lồ, không bao giờ tốn thêm một đồng chi phí duy trì hàng tháng.</p>
+            </div>
+          </li>
+        </ul>
+        <a href="#products" class="btn btn-outline" style="margin-top:32px">Khám Phá Web App</a>
+      </div>
+
+      <div class="demo-visual reveal d2">
+        <div class="gas-demo-window">
+          <div class="gas-demo-header">
+            <span class="dot"></span><span class="dot"></span><span class="dot"></span>
+            <span class="gas-demo-title">script.google.com — Live Preview</span>
+          </div>
+          <div class="gas-demo-body">
+            <!-- Code Pane -->
+            <div class="gas-pane">
+              <div class="gas-pane-header">
+                <span><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#F59E0B" stroke-width="2" style="margin-right:6px;vertical-align:middle"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>Code.gs (Apps Script Editor)</span>
+              </div>
+              <div class="gas-pane-content">
+<pre style="margin:0"><span class="gas-keyword">function</span> <span class="gas-function">doGet</span>() {
+  <span class="gas-keyword">return</span> <span class="gas-class">HtmlService</span>
+    .<span class="gas-function">createHtmlOutputFromFile</span>(<span class="gas-string">'WebApp'</span>)
+    .<span class="gas-function">setXFrameOptionsMode</span>(<span class="gas-class">HtmlService</span>.<span class="gas-class">XFrameOptionsMode</span>.<span class="gas-class">ALLOWALL</span>);
+}
+
+<span class="gas-comment">// Nhận điện thoại từ Web UI, tra cứu trong Google Sheets Database</span>
+<span class="gas-keyword">function</span> <span class="gas-function">getCustomerData</span>(phone) {
+  <span class="gas-keyword">const</span> sheet = <span class="gas-class">SpreadsheetApp</span>.<span class="gas-function">getActive</span>().<span class="gas-function">getSheetByName</span>(<span class="gas-string">'Data'</span>);
+  <span class="gas-comment">/* Thực thi backend và trả về Web App... */</span>
+  <span class="gas-keyword">return</span> { name: <span class="gas-string">"Nguyễn Văn A"</span>, status: <span class="gas-string">"VIP"</span>, points: 1540 };
+}</pre>
+              </div>
+            </div>
+            
+            <!-- Live App Pane -->
+            <div class="gas-pane">
+              <div class="gas-pane-header">
+                <span><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#3B82F6" stroke-width="2" style="margin-right:6px;vertical-align:middle"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>Live Web App (Tương tác thật)</span>
+              </div>
+              <div class="gas-preview-content">
+                <div class="gas-mock-app">
+                  <div class="gas-mock-header">Tra cứu thông tin khách hàng</div>
+                  <input type="text" id="demoPhone" class="gas-mock-input" placeholder="Nhập số điện thoại (vd: 091...)" />
+                  <button id="demoBtn" class="gas-mock-btn">Kiểm tra thông tin trên Sheets</button>
+                  <div id="demoResult" class="gas-mock-result"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <p style="text-align:center;font-size:13px;color:var(--text-muted);margin-top:12px;display:flex;align-items:center;justify-content:center;gap:6px">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg> 
+          Mô phỏng code thực tế và kết quả trả về
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════════
+     HOW IT WORKS
+═══════════════════════════════════════════════ -->
+<section class="how section-py" id="how">
+  <div class="container">
+    <div class="section-header">
+      <p class="section-label">Quy Trình</p>
+      <h2 class="section-title reveal">Chạy Ngay Trong <span class="cta-text">4 Bước Đơn Giản</span></h2>
+      <p class="section-sub reveal d1">Không cần kiến thức lập trình. Không cần cài thêm phần mềm. Mọi thứ chạy hoàn toàn trên Google.</p>
+    </div>
+
+    <div class="steps">
+      <div class="step reveal">
+        <div class="step-num">1</div>
+        <h3 class="step-title">Chọn Script</h3>
+        <p class="step-desc">Duyệt kho sản phẩm và chọn script phù hợp với nhu cầu tự động hóa của bạn.</p>
+      </div>
+      <div class="step reveal d1">
+        <div class="step-num">2</div>
+        <h3 class="step-title">Mua &amp; Nhận File</h3>
+        <p class="step-desc">Thanh toán an toàn. Nhận ngay file .gs và tài liệu hướng dẫn chi tiết qua email.</p>
+      </div>
+      <div class="step reveal d2">
+        <div class="step-num">3</div>
+        <h3 class="step-title">Copy &amp; Paste</h3>
+        <p class="step-desc">Mở Google Apps Script Editor, dán code vào, lưu lại. Không cần IDE hay môi trường cài thêm.</p>
+      </div>
+      <div class="step reveal d3">
+        <div class="step-num">4</div>
+        <h3 class="step-title">Chạy tự động</h3>
+        <p class="step-desc">Thiết lập trigger một lần. Script tự chạy theo lịch, không cần bạn can thiệp nữa.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════════
+     TESTIMONIALS
+═══════════════════════════════════════════════ -->
+<section class="testimonials section-py" id="testimonials">
+  <div class="container">
+    <div class="section-header">
+      <p class="section-label">Đánh Giá Thực Tế</p>
+      <h2 class="section-title reveal">Khách Hàng <span class="gradient-text">Nói Gì?</span></h2>
+    </div>
+
+    <div class="testi-grid">
+
+      <article class="testi-card reveal">
+        <div class="testi-stars">
+          <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+        </div>
+        <p class="testi-quote">"Script Báo Cáo Doanh Thu đã giúp team kế toán của tôi tiết kiệm ít nhất 3 tiếng mỗi ngày. Bây giờ báo cáo tự gửi về email lúc 8 tối, sếp cực kỳ hài lòng!"</p>
+        <div class="testi-author">
+          <div class="testi-avatar" style="background:linear-gradient(135deg,#5B6CF9,#22D3EE)">N</div>
+          <div>
+            <div class="testi-name">Nguyễn Minh Tuấn</div>
+            <div class="testi-role">Trưởng phòng Kế toán · FPT Retail</div>
+          </div>
+        </div>
+      </article>
+
+      <article class="testi-card reveal d1">
+        <div class="testi-stars">
+          <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+        </div>
+        <p class="testi-quote">"Mail Merge nhưng mà gắn được hóa đơn PDF riêng cho từng khách? Quá đỉnh! Dịch vụ hỗ trợ cũng rất nhiệt tình, thắc mắc gì là được giải đáp ngay."</p>
+        <div class="testi-author">
+          <div class="testi-avatar" style="background:linear-gradient(135deg,#F97316,#EF4444)">L</div>
+          <div>
+            <div class="testi-name">Lê Thị Hương</div>
+            <div class="testi-role">Marketing Manager · Startup E-com</div>
+          </div>
+        </div>
+      </article>
+
+      <article class="testi-card reveal d2">
+        <div class="testi-stars">
+          <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+        </div>
+        <p class="testi-quote">"Tôi là người không biết code nhưng vẫn cài đặt được trong 15 phút nhờ video hướng dẫn đi kèm. Drive của cả công ty giờ gọn gàng hẳn!"</p>
+        <div class="testi-author">
+          <div class="testi-avatar" style="background:linear-gradient(135deg,#10B981,#0D9488)">T</div>
+          <div>
+            <div class="testi-name">Trần Quốc Bảo</div>
+            <div class="testi-role">Operations Lead · Agency Design</div>
+          </div>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════════
+     FEATURES STRIP
+═══════════════════════════════════════════════ -->
+<section class="features-strip section-py" id="features">
+  <div class="container">
+    <div class="section-header">
+      <p class="section-label">Vì Sao Chọn Chúng Tôi</p>
+      <h2 class="section-title reveal">Cam Kết Chất Lượng <span class="gradient-text">Vượt Trội</span></h2>
+    </div>
+
+    <div class="features-grid">
+
+      <div class="feat-card reveal">
+        <div class="feat-icon">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+        </div>
+        <h3 class="feat-title">Chạy Ngay, Không Cài Đặt Thêm</h3>
+        <p class="feat-desc">Mọi script chạy 100% trên hạ tầng Google — không cần server, không cần hosting, không tốn thêm chi phí cố định hằng tháng.</p>
+      </div>
+
+      <div class="feat-card reveal d1">
+        <div class="feat-icon">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+        </div>
+        <h3 class="feat-title">Bảo Mật &amp; An Toàn Tuyệt Đối</h3>
+        <p class="feat-desc">Script đọc/ghi dữ liệu trong chính tài khoản Google của bạn. Chúng tôi không bao giờ lưu trữ hay truy cập dữ liệu của bạn.</p>
+      </div>
+
+      <div class="feat-card reveal d2">
+        <div class="feat-icon">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 16V8a2 2 0 00-1-1.73l-7-4a2 2 0 00-2 0l-7 4A2 2 0 003 8v8a2 2 0 001 1.73l7 4a2 2 0 002 0l7-4A2 2 0 0021 16z"/></svg>
+        </div>
+        <h3 class="feat-title">Cập Nhật Trọn Đời</h3>
+        <p class="feat-desc">Mua một lần, nhận update mãi mãi. Google thay đổi API? Chúng tôi cập nhật script cho bạn, hoàn toàn miễn phí.</p>
+      </div>
+
+      <div class="feat-card reveal d3">
+        <div class="feat-icon">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87"/><path d="M16 3.13a4 4 0 010 7.75"/></svg>
+        </div>
+        <h3 class="feat-title">Hỗ Trợ 1:1 Tận Tình</h3>
+        <p class="feat-desc">Gặp vấn đề khi cài đặt? Chat trực tiếp với tác giả qua Zalo/FB. Cam kết phản hồi trong vòng 2 giờ làm việc.</p>
+      </div>
+
+      <div class="feat-card reveal d4">
+        <div class="feat-icon">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="1" y="4" width="22" height="16" rx="2" ry="2"/><line x1="1" y1="10" x2="23" y2="10"/></svg>
+        </div>
+        <h3 class="feat-title">Thanh Toán Linh Hoạt</h3>
+        <p class="feat-desc">Momo, ZaloPay, chuyển khoản ngân hàng — đa dạng hình thức thanh toán phù hợp với người dùng Việt Nam.</p>
+      </div>
+
+      <div class="feat-card reveal d5">
+        <div class="feat-icon" style="background:rgba(249,115,22,.12);color:var(--cta)">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+        </div>
+        <h3 class="feat-title">Bảo Hành Hoàn Tiền 30 Ngày</h3>
+        <p class="feat-desc">Không hài lòng vì bất kỳ lý do gì trong 30 ngày đầu? Chúng tôi hoàn tiền 100% không hỏi thêm câu nào.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════════
+     CTA SECTION
+═══════════════════════════════════════════════ -->
+<section class="cta-section">
+  <div class="container">
+    <h2 class="reveal">Sẵn Sàng <span class="cta-text">Tự Động Hóa?</span></h2>
+    <p class="reveal d1">Tham gia cùng 1,200+ doanh nghiệp Việt đang tiết kiệm hàng chục giờ mỗi tuần.</p>
+    <div class="cta-btns reveal d2">
+      <a href="#products" class="btn btn-cta btn-lg" id="ctaMain">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 01-8 0"/></svg>
+        Xem Tất Cả Sản Phẩm
+      </a>
+      <a href="mailto:support@scriptstore.vn" class="btn btn-outline btn-lg" id="ctaContact">Liên hệ tư vấn</a>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════════
+     FOOTER
+═══════════════════════════════════════════════ -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-about">
+        <a href="#" class="nav-logo" style="margin-bottom:0">
+          <div class="nav-logo-mark">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/>
+            </svg>
+          </div>
+          <span class="nav-logo-name">Script<em>Store</em></span>
+        </a>
+        <p>Bộ sưu tập Google Apps Script cao cấp cho doanh nghiệp Việt. Tự động hóa không cần biết lập trình.</p>
+      </div>
+
+      <div class="footer-col">
+        <h4>Sản Phẩm</h4>
+        <ul>
+          <li><a href="#products">Google Sheets</a></li>
+          <li><a href="#products">Gmail</a></li>
+          <li><a href="#products">Google Drive</a></li>
+          <li><a href="#products">Calendar</a></li>
+          <li><a href="#products">Google Docs</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Hỗ Trợ</h4>
+        <ul>
+          <li><a href="#">Tài liệu hướng dẫn</a></li>
+          <li><a href="#">Video tutorial</a></li>
+          <li><a href="#">FAQ</a></li>
+          <li><a href="mailto:support@scriptstore.vn">Liên hệ</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Pháp Lý</h4>
+        <ul>
+          <li><a href="#">Điều khoản dịch vụ</a></li>
+          <li><a href="#">Chính sách bảo mật</a></li>
+          <li><a href="#">Chính sách hoàn tiền</a></li>
+          <li><a href="#">License thương mại</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p class="footer-copy">© 2025 <a href="#">ScriptStore</a>. Không liên kết với Google LLC.</p>
+      <div class="footer-social">
+        <a href="#" class="soc-btn" aria-label="Facebook" title="Facebook">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg>
+        </a>
+        <a href="#" class="soc-btn" aria-label="YouTube" title="YouTube">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M22.54 6.42a2.78 2.78 0 00-1.95-1.96C18.88 4 12 4 12 4s-6.88 0-8.59.46a2.78 2.78 0 00-1.95 1.96A29 29 0 001 12a29 29 0 00.46 5.58A2.78 2.78 0 003.4 19.54C5.12 20 12 20 12 20s6.88 0 8.59-.46a2.78 2.78 0 001.95-1.96A29 29 0 0023 12a29 29 0 00-.46-5.58z"/><polygon fill="var(--bg)" points="9.75 15.02 15.5 12 9.75 8.98 9.75 15.02"/></svg>
+        </a>
+        <a href="#" class="soc-btn" aria-label="Zalo" title="Zalo">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12s5.37 12 12 12 12-5.37 12-12S18.63 0 12 0zm5.97 16.5c-.38.38-.9.5-1.4.5H7.43c-.5 0-1.02-.12-1.4-.5-.38-.38-.5-.9-.5-1.4V8.9c0-.5.12-1.02.5-1.4.38-.38.9-.5 1.4-.5H16.57c.5 0 1.02.12 1.4.5.38.38.5.9.5 1.4v6.2c0 .5-.12 1.02-.5 1.4zM8 10h1.5v4H8v-4zm.75-1.5a.75.75 0 110-1.5.75.75 0 010 1.5zM11 10h1.5v.5c.28-.38.72-.5 1.25-.5.83 0 1.25.5 1.25 1.5V14H13.5v-2.25c0-.42-.17-.75-.5-.75s-.5.33-.5.75V14H11v-4z"/></svg>
+        </a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- ══════════════════════════════════════════════
+     PRODUCT DETAIL MODAL
+═══════════════════════════════════════════════ -->
+<div class="modal-overlay" id="productModal" role="dialog" aria-modal="true" aria-labelledby="mName">
+  <div class="modal" id="modalBox">
+    <div class="modal-header">
+      <div>
+        <div class="card-tags" id="mTags" style="margin-bottom:8px"></div>
+        <h2 class="modal-name" id="mName"></h2>
+      </div>
+      <button class="modal-close" id="closeModal" aria-label="Đóng modal">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+      </button>
+    </div>
+
+    <div class="modal-body">
+      <p class="modal-desc" id="mDesc"></p>
+
+      <div class="modal-divider"></div>
+
+      <p class="modal-sub-title">Tính Năng Nổi Bật</p>
+      <ul class="modal-features" id="mFeatures"></ul>
+
+      <div class="modal-divider"></div>
+
+      <p class="modal-sub-title">Bạn Nhận Được</p>
+      <ul class="modal-features" id="mIncludes">
+        <li>
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+          File .gs (Google Apps Script) hoàn chỉnh
+        </li>
+        <li>
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+          Hướng dẫn cài đặt chi tiết (PDF + Video)
+        </li>
+        <li>
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+          Google Sheets mẫu (template sẵn dữ liệu thử)
+        </li>
+        <li>
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+          Cập nhật trọn đời &amp; hỗ trợ 1:1
+        </li>
+      </ul>
+    </div>
+
+    <div class="modal-footer">
+      <div>
+        <div class="modal-price" id="mPrice"></div>
+        <div class="modal-price-note">Mua một lần · Dùng mãi mãi · Bảo hành 30 ngày</div>
+      </div>
+      <a href="mailto:support@scriptstore.vn" class="btn btn-cta" id="mBuyBtn">
+        Mua Ngay →
+      </a>
+    </div>
+  </div>
+</div>
+
+<script src="js/main.js"></script>
+</body>
+</html>
